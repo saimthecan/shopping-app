@@ -6,6 +6,8 @@ import CartDetail from "../cart/CartDetail";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 import HomePage from "./HomePage";
+import Footers from "../footerComponent/Footers";
+
 
 
 
@@ -20,7 +22,7 @@ function App() {
         <Route path="/products" exact element={<Dashboard />}></Route>
         <Route path="/cart" exact element={<CartDetail />}></Route>
       </Routes>
-      
+      <Footers />
     </div>
   );
 }

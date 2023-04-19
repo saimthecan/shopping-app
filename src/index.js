@@ -13,6 +13,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 
 
+
 const store = configureStore();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

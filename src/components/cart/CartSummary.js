@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import alertify from "alertifyjs";
 import cart from "../../assests/cart.png";
 
+
 class CartSummary extends Component {
   constructor(props) {
     super(props);

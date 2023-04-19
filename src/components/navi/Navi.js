@@ -9,7 +9,6 @@ import {
     MDBIcon,
     MDBNavbarNav,
     MDBNavbarItem,
-    MDBNavbarLink,
     MDBDropdownToggle,
     MDBDropdownMenu,
     MDBDropdownItem,
@@ -18,6 +17,7 @@ import {
     MDBDropdown
 } from 'mdb-react-ui-kit';
 import logo from "../../assests/logo.png"
+import { NavLink } from "react-router-dom";
 
 
 
@@ -28,14 +28,10 @@ export default function Navi() {
     
 <MDBNavbar fixed sticky expand='lg' dark style={{backgroundColor: 'darkred', color: '#ffffff'}}>
 <MDBContainer fluid className="containers">
-    <MDBNavbarBrand style={{marginLeft:"1.5rem"}} href='/'>
-        <img
-            src={logo}  
-            height='45'
-            width='45'
-            alt='cart logo'
-            loading='lazy'
-        />
+    <MDBNavbarBrand style={{marginLeft:"1.5rem"}}>
+    <NavLink to="/">
+            <img src={logo} height="45" width="45" alt="cart logo" loading="lazy" />
+          </NavLink>
     </MDBNavbarBrand>
     <MDBNavbarToggler
         aria-controls='navbarSupportedContent'
@@ -48,14 +44,14 @@ export default function Navi() {
     <MDBCollapse navbar show={showBasic}>
         <MDBNavbarNav className='mr-auto mb-2 mb-lg-0' style={{paddingLeft:"2rem", alignItems:"center"}}>
             <MDBNavbarItem>
-                <MDBNavbarLink style={{color:'#ffffff', marginRight:"0.7rem",}} active aria-current='page' href='/' >
-                   Home
-                </MDBNavbarLink>
+                <NavLink style={{color:'#ffffff', marginRight:"0.7rem",}} className="nav-link" activeClassName="active" exact to="/">
+                Home
+              </NavLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-                <MDBNavbarLink  active aria-current='page' href='/products'>
-                   Products
-                </MDBNavbarLink>
+            <NavLink style={{color:'#ffffff'}} className="nav-link" activeClassName="active" to="/products">
+                Products
+              </NavLink>
             </MDBNavbarItem>
             <MDBNavbarItem className='buttons'>
               <CartSummary />

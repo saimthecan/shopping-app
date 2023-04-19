@@ -1,0 +1,4 @@
+.app {
+    overflow-x: hidden; /* Yatay kaydırma çubuğunu gizler */
+    overflow-y: auto; /* Dikey kaydırma çubuğunu gerektiğinde gösterir */
+}

@@ -1,0 +1,16 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkred;
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+.container{
+    margin: 0 !important;
+    padding: 0 !important;
+}  

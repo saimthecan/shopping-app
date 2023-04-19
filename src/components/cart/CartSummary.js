@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   Badge,
-  UncontrolledDropdown,
+  Dropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -38,8 +38,8 @@ class CartSummary extends Component {
 
   renderSummary() {
     return (
-      <UncontrolledDropdown nav isOpen={this.state.dropdownOpen}>
-        <DropdownToggle nav caret onClick={this.toggleDropdown}>
+      <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+        <DropdownToggle nav caret>
           <img src={cart} alt="cart logo" height="30" />
         </DropdownToggle>
         <DropdownMenu
@@ -68,7 +68,7 @@ class CartSummary extends Component {
           </DropdownItem>
           </Link>
         </DropdownMenu>
-      </UncontrolledDropdown>
+        </Dropdown>
     );
   }
 

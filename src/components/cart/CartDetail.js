@@ -16,7 +16,10 @@ class CartDetail extends Component {
     }
     renderSummary() {
     return (
-      <div>
+      <div style={{width:"60%", marginLeft:"2rem"}}> 
+         <p style={{marginTop:"1rem",marginLeft:"3rem"}}>
+              <span className="h2">Shopping Cart </span>
+            </p>
        <Table bordered size="" striped style={{marginTop:"0.5rem"}}>
   <thead>
   <tr>
@@ -35,7 +38,7 @@ class CartDetail extends Component {
                   <td>{cartItem.product.unitPrice}</td>
                   <td>{cartItem.quantity}</td>
 
-                  <td style={{maxWidth:"3.5rem"}}> 
+                  <td style={{maxWidth:"7rem"}}> 
                   <Button color="danger" onClick ={() => this.removeFromCart(cartItem.product)}>
                     Delete
                   </Button>
@@ -46,7 +49,7 @@ class CartDetail extends Component {
 </Table>
 <div className="d-flex justify-content-end">
                 <Link to="/products">
-                <MDBBtn color="light" size="lg" className="me-2">
+                <MDBBtn style={{backgroundColor:"burlywood"}} size="lg" className="me-2">
                 Continue shopping
               </MDBBtn>
               </Link>

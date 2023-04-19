@@ -80,10 +80,17 @@ renderEmpty() {
 }
 
 render() {
+  const containerStyle = {
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  };
   return (
-    <div>
-      {this.props.cart.length > 0 ? this.renderSummary() : this.renderEmpty()}
-    </div>
+    <div style={containerStyle}>
+        {this.props.cart.length > 0
+          ? this.renderSummary()
+          : this.renderEmpty()}
+      </div>
   );
 }
 }
@@ -97,7 +104,7 @@ function mapDispatchToProps(dispatch) {
   }
 
   
-  function mapStateToProps(state) {
+  function mapStateToProps(state) { 
     return {
       cart: state.cartReducer,
     };

@@ -14,3 +14,15 @@
     margin: 0 !important;
     padding: 0 !important;
 }  
+
+.buttons {
+  /* Buraya istediğiniz CSS stillerini ekleyin */
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+
+}
+
+.containers{
+  align-items: center;
+}

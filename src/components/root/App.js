@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import CartDetail from "../cart/CartDetail";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
+import HomePage from "./HomePage";
 
 
 
@@ -15,8 +16,8 @@ function App() {
     <div className="app">
       <Navi />
       <Routes>
-        <Route path="/" exact element={<Dashboard />}></Route>
-        <Route path="/product" exact element={<Dashboard />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/products" exact element={<Dashboard />}></Route>
         <Route path="/cart" exact element={<CartDetail />}></Route>
       </Routes>
       

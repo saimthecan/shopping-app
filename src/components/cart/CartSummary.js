@@ -34,6 +34,7 @@ class CartSummary extends Component {
     alertify.error(product.productName + " deleted from the cart");
   }
 
+
   renderSummary() {
     return (
       <UncontrolledDropdown nav isOpen={this.state.dropdownOpen}>
@@ -41,31 +42,30 @@ class CartSummary extends Component {
           <img src={cart} alt="cart logo" height="30" />
         </DropdownToggle>
         <DropdownMenu
-          style={{
-            maxHeight: "300px",
-            overflowY: "auto",
-            width: "auto",
-            position: "absolute",
-            zIndex: 1000,
-          }}
+   
         >
           {this.props.cart.map((cartItem) => (
-            <DropdownItem style={{ maxHeight: "300px" }} key={cartItem.product.id}>
-              <Badge
+            
+            <DropdownItem style={{ maxHeight: "300px"}} key={cartItem.product.id}>
+             <Badge
+              style={{marginRight:"0.5rem"}}
+                id ="danger"
                 color="danger"
                 onClick={(event) => this.removeFromCart(event, cartItem.product)}
               >
                 X
               </Badge>
-              {cartItem.product.productName}
-              <Badge color="success">{cartItem.quantity}</Badge>
+              <span style={{ fontWeight: "bold" }}> {cartItem.product.productName.toUpperCase()}</span> - {cartItem.quantity} quantity
+             
             </DropdownItem>
           ))}
 
-          <DropdownItem divider />
-          <DropdownItem>
-            <Link to={"/cart"}>Go To Cart</Link>
+          <DropdownMenu divider />
+          <Link to="/cart" style={{ textDecoration: "none" }}>
+          <DropdownItem style={{ backgroundColor: "green" , textAlign: "center", color: "white" }}>
+          Go To Cart
           </DropdownItem>
+          </Link>
         </DropdownMenu>
       </UncontrolledDropdown>
     );

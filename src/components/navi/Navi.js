@@ -12,6 +12,7 @@ export default function Navi() {
       <Navbar>
         <NavbarBrand tag={Link} to="/">
           <img src={logo} alt="Logo" height="50" style={{marginLeft:"1.2rem"}} />
+          
         </NavbarBrand>
         <Nav className="ml-auto" navbar>
         <div className="d-flex">

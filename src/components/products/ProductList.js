@@ -22,7 +22,7 @@ class ProductList extends Component {
   };
   render() {
     return (
-      <div>
+      <div style={{minHeight: "100vh"}}>
         <h3 style={{ marginTop: "0.5rem" }}>
           <Badge style={{ marginRight: "0.1rem" }} color="primary">
             Products

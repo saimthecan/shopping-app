@@ -1,18 +1,20 @@
 # Shopping App
 
-The application is built with React and Redux. Reactstrap, react-router-dom,alertifyjs react-redux libraries are used
-
-## Starting the App
-
-* Open the downloaded folder with vs code
-* Start a new terminal
-* Install react scripts with the command **npm install react-scripts --save**
-* Start the application with the **npm start** command
+This is a shopping application built with React js. Redux is used as state management. 
 
 ## Features
 
-* You can filter product list by category list
-* You can add products from product list to cart
-* If you want, you can view the products from the cart in the navi. If you want, you can go to the cart and view it.
-* You can delete the products in the cart with these two methods.
-* You can fill in the requested information in form demo 1 and form demo 2
+* You can go to the products page and select the category you want and you can add the products you want from the category you selected to the cart.
+
+![page view1](./shopping-1.PNG)
+
+* You can view the cart from the cart icon in the navbar and you can also go to the cart page if you want
+  ![page view2](./shopping-2.PNG)
+  ![page view3](./shopping-3.PNG)
+
+* You can delete the product from the cart both from the icon in the navbar and from the cart page.
+
+![page view4](./shopping-4.PNG)
+* You can reach my social media accounts from the icons in the footer.
+* ![page view5](./shopping-5.PNG)
+

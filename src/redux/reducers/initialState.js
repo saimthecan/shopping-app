@@ -1,8 +1,8 @@
 const initialState = {
-    categories : [],
-    products: [],
-    cart: []
-  };
-  
-  export default initialState;
+  categories: [],
+  products: [],
+  cart: [],
+  currentCategory: {}, 
+};
 
+export default initialState;

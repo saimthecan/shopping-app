@@ -1,9 +1,8 @@
-
-
-
-export default {
-    currentCategory: {},
+const initialState = {
     categories : [],
     products: [],
     cart: []
-}
+  };
+  
+  export default initialState;
+

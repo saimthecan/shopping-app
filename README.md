@@ -14,6 +14,7 @@ This is a shopping application built with React js. Redux is used as state manag
 ![page view3](./shopping-3.PNG)
 
 * You can delete the product from the cart both from the icon in the navbar and from the cart page.
+* You will be notified when adding items to the cart and deleting items from the cart.
 
 ![page view4](./shopping-4.PNG)
 

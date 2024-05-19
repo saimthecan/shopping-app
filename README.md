@@ -1,5 +1,7 @@
 # Shopping App
 
+https://canozgen-shopping-app.netlify.app/
+
 This is a shopping application built with React js. Redux is used as state management. 
 
 ## Features
